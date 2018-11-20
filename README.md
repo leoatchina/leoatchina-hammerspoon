@@ -14,23 +14,6 @@
 
 ![vim-key-binding](./assets/vim-key-binding(block-caret).gif)
 
-## 窗口管理
-* 居中和最大化
-
-![Imgur](http://i.imgur.com/okNaoJW.gif)
-
-* 快速布局到 1/2 屏幕
-
-![Imgur](http://i.imgur.com/VNo7nCI.gif)
-
-* 调整大小（以左边和上边为基准，调整右边和下边）
-
-![Imgur](http://i.imgur.com/vIqDMUD.gif)
-
-* 调整大小（以右边和下边为基准，调整左边和上边）
-
-![Imgur](http://i.imgur.com/fiIfeXe.gif)
-
 # 安装
 * **首先**安装 [HammerSpoon](https://github.com/Hammerspoon/hammerspoon)
 * 下载、拷贝或者直接 `git clone` 这些文件：
@@ -47,9 +30,12 @@
 	* `Ctrl-Alt-Cmd-Shift + Left` - 将当前窗口移动到左侧的屏幕
 	* `Ctrl-Alt-Cmd-Shift + Right` - 将当前窗口移动到右侧屏幕
 * 窗口最大化
-	* `Ctrl-Alt-Command + M`
+	* `Ctrl-Alt-Command + k`
 * 将窗口居中（注：会保持窗口高度）
-	* `Ctrl-Alt-Command + C`
+	* `Ctrl-Alt-Command + j`
+* 类 Windows 的窗口移动（调整窗口位置至相对于当前窗口的左右，效果请参考 Windows 系统下的快捷键 `win + 左/右`）
+  * `Ctrl-Alt-Command + h`    将窗口移至相对于当前窗口的左方，并将窗口调整至二分之一屏幕大小
+  * `Ctrl-Alt-Command + l`    将窗口移至相对于当前窗口的右方，并将窗口调整至二分之一屏幕大小
 * 布局窗口至二分之一当前屏幕大小
 	* `Ctrl-Alt-Command + Left` - 窗口占屏幕左半部分
 	* `Ctrl-Alt-Command + Right` - 窗口占屏幕右半部分
@@ -65,22 +51,18 @@
 	* `Ctrl-Command-Shift + Right` - 左边右移（窗口变小）
 	* `Ctrl-Command-Shift + Up` - 上边上移（窗口变大）
 	* `Ctrl-Command-Shift + Down` - 上边下移（窗口变小）
-* 类 Windows 的窗口移动（调整窗口位置至相对于当前窗口的左右，效果请参考 Windows 系统下的快捷键 `win + 左/右`）
-  * `Ctrl-Alt-Command + h`    将窗口移至相对于当前窗口的左方，并将窗口调整至二分之一屏幕大小
-  * `Ctrl-Alt-Command + l`    将窗口移至相对于当前窗口的右方，并将窗口调整至二分之一屏幕大小
 
 ## 类 Vim 全局快捷键绑定
 * 基本操作
-    * `Ctrl + h` 左
-    * `Ctrl + j` 下
-    * `Ctrl + k` 上
-    * `Ctrl + l` 右
+  * `Ctrl + h` 左
+  * `Ctrl + j` 下
+  * `Ctrl + k` 上
+  * `Ctrl + l` 右
 * 与 `Alt` 配合使用
-    * `Ctrl-Alt + H` 光标向左移动一个词
-    * `Ctrl-Alt + L` 光标向右移动一个词
+  * `Ctrl-Alt + H` 光标向左移动一个词
+  * `Ctrl-Alt + L` 光标向右移动一个词
 * 与 `Cmd` 配合使用
-    * `Ctrl-Cmd + H` 光标移至行首
-    * `Ctrl-Cmd + L` 光标移至行尾
+  * `Ctrl-Cmd + H` 光标移至行首
+  * `Ctrl-Cmd + L` 光标移至行尾
 * 与 `Shift` 配合使用
-    * 上面所列出的操作，配合 `Shift` 可以实现选中功能
-
+  * 上面所列出的操作，配合 `Shift` 可以实现选中功能
