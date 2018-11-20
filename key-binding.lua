@@ -16,8 +16,8 @@ end
 
 -- * Move window to screen
 windowBind({"ctrl", "alt", "cmd", "shift"}, {
-  down  = wm.throwLeft,
-  up    = wm.throwRight,
+  up    = wm.throwLeft,
+  down  = wm.throwRight,
   left  = wm.cycleLeft,
   right = wm.cycleRight
 })
