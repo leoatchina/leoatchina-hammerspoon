@@ -16,16 +16,16 @@ end
 
 -- * Move window to screen
 windowBind({"ctrl", "alt", "cmd", "shift"}, {
-  up    = wm.throwLeft,
-  down  = wm.throwRight,
-  left  = wm.cycleLeft,
-  right = wm.cycleRight
+  pageup   = wm.maximizeWindow,
+  pagedown = wm.centerOnScreen,
+  up       = wm.throwLeft,
+  down     = wm.throwRight,
+  left     = wm.cycleLeft,
+  right    = wm.cycleRight
 })
 
 -- * Set Window Position on screen
 windowBind({"ctrl", "alt", "cmd"}, {
-  pageup   = wm.maximizeWindow,
-  pagedown = wm.centerOnScreen,
   left     = wm.leftHalf,
   right    = wm.rightHalf,
   up       = wm.topHalf,
