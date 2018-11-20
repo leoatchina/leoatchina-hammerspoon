@@ -5,22 +5,13 @@
     * **直接**将窗口大小设置为当前的一半（上下左右四个方向）
     * 向**任意**方向调整窗口大小
     * **新功能** 类 Windows 的窗口移动，作用与 Windows 系统下的 `winKey + left/right` 一致
-* **新功能** 全局类 Vim 快捷键绑定 (感谢 [@A-RON](https://github.com/asmagill) 的帮助)
-    * `Ctrl + hjkl` 光标的上下左右
-    * 可以与 `alt`, `shift`, `cmd` 搭配使用，实现按词移动、移到行首行尾以及选中
 
 # 示例
-## 全局类 Vim 快捷键绑定
-
-![vim-key-binding](./assets/vim-key-binding(block-caret).gif)
-
 # 安装
 * **首先**安装 [HammerSpoon](https://github.com/Hammerspoon/hammerspoon)
 * 下载、拷贝或者直接 `git clone` 这些文件：
     * [init.lua](https://github.com/S1ngS1ng/HammerSpoon/blob/master/init.lua) - 主程序入口
     * [key-binding.lua](https://github.com/S1ngS1ng/HammerSpoon/blob/master/key-binding.lua) - 窗口管理快捷键配置
-    * [vim-binding.lua](https://github.com/S1ngS1ng/HammerSpoon/blob/master/vim-binding.lua) - 类 Vim 快捷键绑定
-    * [vox-control.lua](https://github.com/S1ngS1ng/HammerSpoon/blob/master/vox-control.lua) - VOX 播放器控制
     * [window-management.lua](https://github.com/S1ngS1ng/HammerSpoon/blob/master/window-management.lua) - 窗口管理
 * 将`init.lua`, `key-binding.lua`, `vim-binding.lua`, `vox-control.lua` 和 `window-management.lua` 放到 `~/.hammerspoon` 路径下
 
@@ -54,13 +45,13 @@
 
 ## 类 Vim 全局快捷键绑定
 * 基本操作
-  * `Ctrl + h` 左
-  * `Ctrl + j` 下
-  * `Ctrl + k` 上
-  * `Ctrl + l` 右
+  * `Cmd + h` 左
+  * `Cmd + j` 下
+  * `Cmd + k` 上
+  * `Cmd + l` 右
 * 与 `Alt` 配合使用
-  * `Ctrl-Alt + H` 光标向左移动一个词
-  * `Ctrl-Alt + L` 光标向右移动一个词
+  * `Cmd-Alt + H` 光标向左移动一个词
+  * `Cmd-Alt + L` 光标向右移动一个词
 * 与 `Cmd` 配合使用
   * `Ctrl-Cmd + H` 光标移至行首
   * `Ctrl-Cmd + L` 光标移至行尾
