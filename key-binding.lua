@@ -14,35 +14,33 @@ local function windowBind(hyper, keyFuncTable)
   end
 end
 
--- * Move window to screen
 windowBind({"ctrl", "alt", "cmd", "shift"}, {
-  pageup   = wm.maximizeWindow,
-  pagedown = wm.centerOnScreen,
-  up       = wm.throwLeft,
-  down     = wm.throwRight,
+  pageup   = wm.throwLeft,
+  pagedown = wm.throwRight,
+  up       = wm.maximizeWindow,
+  down     = wm.centerOnScreen,
   left     = wm.cycleLeft,
   right    = wm.cycleRight
 })
 
--- * Set Window Position on screen
 windowBind({"ctrl", "alt", "cmd"}, {
-  left     = wm.leftHalf,
-  right    = wm.rightHalf,
-  up       = wm.topHalf,
-  down     = wm.bottomHalf
+  left  = wm.leftHalf,
+  right = wm.rightHalf,
+  up    = wm.topHalf,
+  down  = wm.bottomHalf
 })
--- * Set Window Position on screen
+
 windowBind({"ctrl", "alt", "shift"}, {
-  left = wm.rightToLeft,      
-  right = wm.rightToRight,    
-  up = wm.bottomUp,           
-  down = wm.bottomDown        
+  left  = wm.rightToLeft,
+  right = wm.rightToRight,
+  up    = wm.bottomUp,
+  down  = wm.bottomDown
 })
--- * Set Window Position on screen
+
 windowBind({"ctrl", "cmd", "shift"}, {
-  left = wm.leftToLeft,      
-  right = wm.leftToRight,    
-  up = wm.topUp,             
-  down = wm.topDown          
+  left  = wm.leftToLeft,
+  right = wm.leftToRight,
+  up    = wm.topUp,
+  down  = wm.topDown
 })
 
