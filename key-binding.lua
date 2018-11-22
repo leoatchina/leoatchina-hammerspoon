@@ -14,13 +14,16 @@ local function windowBind(hyper, keyFuncTable)
   end
 end
 
-windowBind({"ctrl", "alt", "cmd", "shift"}, {
-  pageup   = wm.throwLeft,
-  pagedown = wm.throwRight,
-  up       = wm.maximizeWindow,
-  down     = wm.centerOnScreen,
-  left     = wm.cycleLeft,
-  right    = wm.cycleRight
+
+hyper = {"ctrl", "alt", "cmd", "shift"}
+hk.bind(hyper, "home", wm.throwLeft)
+hk.bind(hyper, "end", wm.throwRight)
+
+windowBind(hyper, {
+  up    = wm.maximizeWindow,
+  down  = wm.centerOnScreen,
+  left  = wm.cycleLeft,
+  right = wm.cycleRight
 })
 
 windowBind({"ctrl", "alt", "cmd"}, {
@@ -44,14 +47,6 @@ windowBind({"ctrl", "cmd", "shift"}, {
   down  = wm.topDown
 })
 
-
-local hyper = {'ctrl', 'cmd', 'alt', 'shift'}
--- Move Mouse to center of next Monitor
-hs.hotkey.bind(hyper, 'tab', function()
-    local screen = hs.mouse.getCurrentScreen()
-    local nextScreen = screen:next()
-    local rect = nextScreen:fullFrame()
-    local center = hs.geometry.rectMidPoint(rect)
-    hs.mouse.setAbsolutePosition(center)
-end)
-
+windowBind({"alt"}, {
+ tab = wm.toggleScreen 
+})

@@ -90,34 +90,6 @@ module.centerOnScreen = function ()
   end
 end
 
-module.throwLeft = function ()
-  local this = windowMeta.new()
-  if this.window:isFullScreen() then
-    this.window:setFullScreen(false)
-    this.window:moveOneScreenWest()
-    hs.timer.doAfter(0.8, function()
-      this.window:setFullScreen(true)
-      this.window:focus()
-    end)
-  else
-    this.window:moveOneScreenWest()
-  end
-end
-
-module.throwRight = function ()
-  local this = windowMeta.new()
-  if this.window:isFullScreen() then
-    this.window:setFullScreen(false)
-    this.window:moveOneScreenEast()
-    hs.timer.doAfter(0.8, function()
-      this.window:setFullScreen(true)
-      this.window:focus()
-    end)
-  else
-    this.window:moveOneScreenEast()
-  end
-end
-
 module.leftHalf = function ()
   local this = windowMeta.new()
   local cell = Cell(0, 0, 0.5 * this.screenGrid.w, this.screenGrid.h)
@@ -250,5 +222,48 @@ module.topDown = function ()
     hs.alert.show("Small Enough :)")
   end
 end
+
+module.toggleScreen = function ()
+  local screen = hs.mouse.getCurrentScreen()
+  local nextScreen = screen:next()
+  local rect = nextScreen:fullFrame()
+  local center = hs.geometry.rectMidPoint(rect)
+  hs.mouse.setAbsolutePosition(center)
+  screen = hs.mouse.getCurrentScreen()
+  
+end
+
+module.throwLeft = function ()
+  local this = windowMeta.new()
+  if this.window:isFullScreen() then
+    this.window:setFullScreen(false)
+    hs.timer.doAfter(0.7, function()
+      this.window:moveOneScreenWest()
+    end)
+    hs.timer.doAfter(0.7, function()
+      this.window:setFullScreen(true)
+    end)
+  else
+    this.window:moveOneScreenWest()
+  end
+  this.window:focus()
+end
+
+module.throwRight = function ()
+  local this = windowMeta.new()
+  if this.window:isFullScreen() then
+    this.window:setFullScreen(false)
+    hs.timer.doAfter(0.7, function()
+      this.window:moveOneScreenEast()
+    end)
+    hs.timer.doAfter(0.7, function()
+      this.window:setFullScreen(true)
+    end)
+  else
+    this.window:moveOneScreenEast()
+  end
+  this.window:focus()
+end
+
 
 return module
