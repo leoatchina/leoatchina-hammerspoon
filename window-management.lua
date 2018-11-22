@@ -17,7 +17,8 @@ local screenwatcher = hs.screen.watcher.new(function()
   screens = hs.screen.allScreens()
 end)
 screenwatcher:start()
-
+-- spaces support
+spaces = require("hs._asm.undocumented.spaces")
 -- Construct list of screens
 indexDiff = 0
 for index=1,#hs.screen.allScreens() do
@@ -230,7 +231,9 @@ module.toggleScreen = function ()
   local center = hs.geometry.rectMidPoint(rect)
   hs.mouse.setAbsolutePosition(center)
   screen = hs.mouse.getCurrentScreen()
-  
+  hs.timer.doAfter(0.3, function()
+    hs.alert.show(screen:name())
+  end)
 end
 
 module.throwLeft = function ()
@@ -246,7 +249,7 @@ module.throwLeft = function ()
   else
     this.window:moveOneScreenWest()
   end
-  this.window:focus()
+  this.window:becomeMain()
 end
 
 module.throwRight = function ()
@@ -262,8 +265,7 @@ module.throwRight = function ()
   else
     this.window:moveOneScreenEast()
   end
-  this.window:focus()
+  this.window:becomeMain()
 end
-
 
 return module
