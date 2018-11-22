@@ -27,7 +27,7 @@ function reloadConfig(files)
   end
   if doReload then
     hs.reload()
-    hs.alert.show('Config Reloaded')
+    hs.alert.show('HammerSpoon Config Reloaded')
   end
 end
 hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
@@ -36,4 +36,4 @@ hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 hs.hotkey.bind({"cmd", "alt", "ctrl","shift"}, "return", function()
   hs.reload()
 end)
-hs.alert.show("Config loaded")
+hs.alert.show("HammerSpoon Config loaded")
