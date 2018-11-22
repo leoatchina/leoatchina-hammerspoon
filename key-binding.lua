@@ -44,6 +44,7 @@ windowBind({"ctrl", "cmd", "shift"}, {
   down  = wm.topDown
 })
 
+
 local hyper = {'ctrl', 'cmd', 'alt', 'shift'}
 -- Move Mouse to center of next Monitor
 hs.hotkey.bind(hyper, 'tab', function()

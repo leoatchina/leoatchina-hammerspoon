@@ -85,17 +85,37 @@ end
 
 module.centerOnScreen = function ()
   local this = windowMeta.new()
-  this.window:centerOnScreen(this.screen)
+  if not this.window:isFullScreen() then
+    this.window:centerOnScreen(this.screen)
+  end
 end
 
 module.throwLeft = function ()
   local this = windowMeta.new()
-  this.window:moveOneScreenWest()
+  if this.window:isFullScreen() then
+    this.window:setFullScreen(false)
+    this.window:moveOneScreenWest()
+    hs.timer.doAfter(0.8, function()
+      this.window:setFullScreen(true)
+      this.window:focus()
+    end)
+  else
+    this.window:moveOneScreenWest()
+  end
 end
 
 module.throwRight = function ()
   local this = windowMeta.new()
-  this.window:moveOneScreenEast()
+  if this.window:isFullScreen() then
+    this.window:setFullScreen(false)
+    this.window:moveOneScreenEast()
+    hs.timer.doAfter(0.8, function()
+      this.window:setFullScreen(true)
+      this.window:focus()
+    end)
+  else
+    this.window:moveOneScreenEast()
+  end
 end
 
 module.leftHalf = function ()
