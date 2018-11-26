@@ -18,6 +18,7 @@ end
 hyper = {"ctrl", "alt", "cmd", "shift"}
 hk.bind(hyper, "home", wm.throwLeft)
 hk.bind(hyper, "end", wm.throwRight)
+hk.bind(hyper, "space", wm.showTimeDateBattery)
 
 windowBind(hyper, {
   up    = wm.maximizeWindow,

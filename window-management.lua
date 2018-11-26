@@ -268,4 +268,11 @@ module.throwRight = function ()
   this.window:becomeMain()
 end
 
+module.showTimeDateBattery = function ()
+  local seconds = 2
+  local message = os.date("%H:%M") .. "\n" .. os.date("%a %b %d") .. "\nBattery: " ..
+     hs.battery.percentage() .. "%"
+  hs.alert.show(message, seconds)
+end
+
 return module
