@@ -33,12 +33,12 @@
 	* `Ctrl-Alt-Cmd + Up` - 窗口占屏幕上半部分
 	* `Ctrl-Alt-Cmd + Down` - 窗口占屏幕下半部分
 * 调整窗口右边、下边位置（保持左边、上边不变）
-	* `Ctrl-Alt-Shift + Left` - 右边左移（窗口变小）
-	* `Ctrl-Alt-Shift + Right` - 右边右移（窗口变大）
-	* `Ctrl-Alt-Shift + Up` - 下边上移（窗口变小）
-	* `Ctrl-Alt-Shift + Down` - 下边下移（窗口变大）
+	* `Cmd-Alt + Left` - 右边左移（窗口变小）
+	* `Cmd-Alt + Right` - 右边右移（窗口变大）
+	* `Cmd-Alt + Up` - 下边上移（窗口变小）
+	* `Cmd-Alt + Down` - 下边下移（窗口变大）
 * 调整窗口左边、上边位置（保持右边、下边不变）
-	* `Ctrl-Cmd-Shift + Left` - 左边左移（窗口变大）
-	* `Ctrl-Cmd-Shift + Right` - 左边右移（窗口变小）
-	* `Ctrl-Cmd-Shift + Up` - 上边上移（窗口变大）
-	* `Ctrl-Cmd-Shift + Down` - 上边下移（窗口变小）
+	* `Ctrl-Shift + Left` - 左边左移（窗口变大）
+	* `Ctrl-Shift + Right` - 左边右移（窗口变小）
+	* `Ctrl-Shift + Up` - 上边上移（窗口变大）
+	* `Ctrl-Shift + Down` - 上边下移（窗口变小）

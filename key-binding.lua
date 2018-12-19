@@ -34,14 +34,14 @@ windowBind({"ctrl", "alt", "cmd"}, {
   down  = wm.bottomHalf
 })
 
-windowBind({"ctrl", "alt", "shift"}, {
+windowBind({"cmd", "alt"}, {
   left  = wm.rightToLeft,
   right = wm.rightToRight,
   up    = wm.bottomUp,
   down  = wm.bottomDown
 })
 
-windowBind({"ctrl", "cmd", "shift"}, {
+windowBind({"ctrl", "shift"}, {
   left  = wm.leftToLeft,
   right = wm.leftToRight,
   up    = wm.topUp,
@@ -49,5 +49,5 @@ windowBind({"ctrl", "cmd", "shift"}, {
 })
 
 windowBind({"alt"}, {
- tab = wm.toggleScreen 
+  tab = wm.toggleScreen 
 })
