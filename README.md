@@ -18,8 +18,8 @@
 # 快捷键
 ## 窗口管理
 * 将窗口移动到另一屏幕
-	* `Ctrl-Alt-Cmd-Shift + PageUp` - 将当前窗口移动到左侧的屏幕
-	* `Ctrl-Alt-Cmd-Shift + PageDown` - 将当前窗口移动到右侧屏幕
+	* `Ctrl-Alt-Cmd-Shift + [` - 将当前窗口移动到左侧的屏幕
+	* `Ctrl-Alt-Cmd-Shift + ]` - 将当前窗口移动到右侧屏幕
 * 窗口最大化
 	* `Ctrl-Alt-Cmd-Shift + Up`
 * 将窗口居中（注：会保持窗口高度）
@@ -30,8 +30,6 @@
 * 布局窗口至二分之一当前屏幕大小
 	* `Ctrl-Alt-Cmd + Left` - 窗口占屏幕左半部分
 	* `Ctrl-Alt-Cmd + Right` - 窗口占屏幕右半部分
-	* `Ctrl-Alt-Cmd + Up` - 窗口占屏幕上半部分
-	* `Ctrl-Alt-Cmd + Down` - 窗口占屏幕下半部分
 * 调整窗口右边、下边位置（保持左边、上边不变）
 	* `Ctrl-Alt-Shift + Left` - 右边左移（窗口变小）
 	* `Ctrl-Alt-Shift + Right` - 右边右移（窗口变大）
