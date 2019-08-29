@@ -1,33 +1,25 @@
 local wm = require('window-management')
 local hk = require "hs.hotkey"
 
--- * Key Binding Utility
---- Bind hotkey for window management.
--- @function windowBind
--- @param {table} hyper - hyper key set
--- @param { ...{key=value} } keyFuncTable - multiple hotkey and function pairs
---   @key {string} hotkey
---   @value {function} callback function
-local function windowBind(hyper, keyFuncTable)
+local function windowBind(keys, keyFuncTable)
   for key,fn in pairs(keyFuncTable) do
-    hk.bind(hyper, key, fn)
+    hk.bind(keys, key, fn)
   end
 end
 
 
-hyper = {"ctrl", "alt", "cmd", "shift"}
-hk.bind(hyper, "[", wm.throwLeft)
-hk.bind(hyper, "]", wm.throwRight)
-hk.bind(hyper, "space", wm.showTimeDateBattery)
+hk.bind({"ctrl", "alt", "cmd"}, "[", wm.throwLeft)
+hk.bind({"ctrl", "alt", "cmd"}, "]", wm.throwRight)
+hk.bind({"ctrl", "alt", "cmd"}, "space", wm.showTimeDateBattery)
 
-windowBind(hyper, {
+windowBind({"ctrl", "alt", "cmd"}, {
   up    = wm.maximizeWindow,
   down  = wm.centerOnScreen,
   left  = wm.cycleLeft,
   right = wm.cycleRight
 })
 
-windowBind({"ctrl", "alt", "cmd"}, {
+windowBind({"shift", "alt", "cmd"}, {
   left  = wm.leftHalf,
   right = wm.rightHalf,
   up    = wm.topHalf,

@@ -20,7 +20,7 @@ require "key-binding"
 -- -----------------------------------------------------------------------
 
 -- Well, sometimes auto-reload is not working, you know u.u
-hs.hotkey.bind({"cmd", "alt", "ctrl","shift"}, "return", function()
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "return", function()
   hs.reload()
 end)
 hs.alert.show("HammerSpoon Config reloaded")
