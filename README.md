@@ -20,20 +20,20 @@
 * 切换显示器
   * `Alt+Tab` - 在两个显示器之间切换
 * 将窗口移动到另一屏幕
-	* `Ctrl-Alt-Cmd-Shift + [` - 将当前窗口移动到左侧的屏幕
-	* `Ctrl-Alt-Cmd-Shift + ]` - 将当前窗口移动到右侧屏幕
+	* `Ctrl-Alt-Cmd + [` - 将当前窗口移动到左侧的屏幕
+	* `Ctrl-Alt-Cmd + ]` - 将当前窗口移动到右侧屏幕
 * 窗口最大化
-	* `Ctrl-Alt-Cmd-Shift + Up`
+	* `Ctrl-Alt-Cmd + Up`
 * 将窗口居中（注：会保持窗口高度）
-	* `Ctrl-Alt-Cmd-Shift + Down`
+	* `Ctrl-Alt-Cmd + Down`
 * 类 Windows 的窗口移动（调整窗口位置至相对于当前窗口的左右，参考Windows 系统下的快捷键 `win + 左/右`）
-  * `Ctrl-Alt-Cmd-Shift + Left`    将窗口移至相对于当前窗口的左方，并将窗口调整至二分之一屏幕大小
-  * `Ctrl-Alt-Cmd-Shift + Right`   将窗口移至相对于当前窗口的右方，并将窗口调整至二分之一屏幕大小
+  * `Ctrl-Alt-Cmd + Left`    将窗口移至相对于当前窗口的左方，并将窗口调整至二分之一屏幕大小
+  * `Ctrl-Alt-Cmd + Right`   将窗口移至相对于当前窗口的右方，并将窗口调整至二分之一屏幕大小
 * 布局窗口至二分之一当前屏幕大小
-	* `Ctrl-Alt-Cmd + Left` - 窗口占屏幕左半部分
-	* `Ctrl-Alt-Cmd + Right` - 窗口占屏幕右半部分
-	* `Ctrl-Alt-Cmd + Up` - 窗口占屏幕上半部分
-	* `Ctrl-Alt-Cmd + Down` - 窗口占屏幕下半部分
+	* `Shift-Alt-Cmd + Left` - 窗口占屏幕左半部分
+	* `Shift-Alt-Cmd + Right` - 窗口占屏幕右半部分
+	* `Shift-Alt-Cmd + Up` - 窗口占屏幕上半部分
+	* `Shift-Alt-Cmd + Down` - 窗口占屏幕下半部分
 * 调整窗口右边、下边位置（保持左边、上边不变）
 	* `Cmd-Alt + Left` - 右边左移（窗口变小）
 	* `Cmd-Alt + Right` - 右边右移（窗口变大）
