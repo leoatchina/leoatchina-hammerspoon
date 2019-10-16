@@ -4,9 +4,9 @@
     * 将当前窗口移动到另一屏幕
     * **直接**将窗口大小设置为当前的一半（上下左右四个方向）
     * 向**任意**方向调整窗口大小
+    * 切换显示器功能
     * **新功能** 类 Windows 的窗口移动，作用与 Windows 系统下的 `winKey + left/right` 一致
 
-# 示例
 # 安装
 * **首先**安装 [HammerSpoon](https://github.com/Hammerspoon/hammerspoon)
 * 下载、拷贝或者直接 `git clone` 这些文件：
@@ -17,6 +17,8 @@
 
 # 快捷键
 ## 窗口管理
+* 切换显示器
+  * `Alt+Tab` - 在两个显示器这间切换
 * 将窗口移动到另一屏幕
 	* `Ctrl-Alt-Cmd-Shift + [` - 将当前窗口移动到左侧的屏幕
 	* `Ctrl-Alt-Cmd-Shift + ]` - 将当前窗口移动到右侧屏幕
