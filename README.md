@@ -16,7 +16,8 @@
 * 将`init.lua`, `key-binding.lua`, 和 `window-management.lua` 放到 `~/.hammerspoon` 路径下
 
 # 快捷键
-## 窗口管理
+* 重载配置
+  * `Ctrl-ALt-Cmd + Enter` - 重装加载配置文件
 * 切换显示器
   * `Alt+Tab` - 在两个显示器之间切换
 * 将窗口移动到另一屏幕
