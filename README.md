@@ -6,6 +6,8 @@
     * 向**任意**方向调整窗口大小
     * 切换显示器功能
     * **新功能** 类 Windows 的窗口移动，作用与 Windows 系统下的 `winKey + left/right` 一致
+* [其他功能]
+    * 显示当前时间、电量
 
 # 安装
 * **首先**安装 [HammerSpoon](https://github.com/Hammerspoon/hammerspoon)
@@ -16,6 +18,8 @@
 * 将`init.lua`, `key-binding.lua`, 和 `window-management.lua` 放到 `~/.hammerspoon` 路径下
 
 # 快捷键
+* 显示电量、时间
+  * `Ctrl-Alt-Cmd + Space` 
 * 重载配置
   * `Ctrl-ALt-Cmd + Enter` - 重装加载配置文件
 * 切换显示器
