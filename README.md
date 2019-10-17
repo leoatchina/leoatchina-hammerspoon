@@ -12,11 +12,10 @@
 
 # 安装
 * **首先**安装 [HammerSpoon](https://github.com/Hammerspoon/hammerspoon)
-* 下载、拷贝或者直接 `git clone` 这些文件：
+* 下载、拷贝这些文件到`~/.hammersppon`, 或者直接 `git clone https://github.com/leoatchina/leoatchina-hammerspoon.git ~/.hammerspoon` ：
   * [init.lua](https://github.com/leoatchina/hammerspon-config/blob/master/init.lua) - 主程序入口
   * [key-binding.lua](https://github.com/leoatchina/hammerspon-config/blob/master/key-binding.lua) - 窗口管理快捷键配置
   * [window-management.lua](https://github.com/leoatchina/hammerspon-config/blob/master/window-management.lua) - 窗口管理
-* 将`init.lua`, `key-binding.lua`, 和 `window-management.lua` 放到 `~/.hammerspoon` 路径下
 
 # 快捷键
 * 显示电量、时间
